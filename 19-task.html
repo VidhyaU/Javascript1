@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="mainform" name="mainform">
+        MALE <input type="radio" name="course" value="Male" onclick="Demo()" >
+        FEMALE <input type="radio" name="course" value="Female" onclick="Demo()">
+        
+    </form>
+    <span id="result"></span>
+    <img src="" id="test"></img>
+    <script>
+        function Demo(){
+            let val=document.getElementById('mainform').value
+
+            if(val==val.male){
+            
+           document.getElementById('result').src="male.png"
+            }
+            else if(val==val.female){
+          
+           document.getElementById('result').src="female.png"
+        }
+    }
+    </script>
+</body>
+</html>

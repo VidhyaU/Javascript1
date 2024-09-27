@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS</h1>
+    <h2 id="txt"></h2>
+    <script>
+        
+        /*let uid=prompt("Enter User ID")
+        document.getElementById("txt").innerHTML=uid
+        alert(uid.length)
+        
+        if (uid.length<=4){
+            document.getElementById("txt").innerHTML="Error"
+        }
+        else if(uid.length==5 && uid.length==8){
+            document.getElementById("txt").innerHTML=" Ok"
+        }
+
+        else if(uid.length>8){
+            document.getElementById("txt").innerHTML="Error"
+        }*/
+    
+        
+    
+        let userid=prompt("enter user id")
+        alert(userid.length)
+       
+        if(userid.length>=5 && userid.length<=8){
+ 
+        document.getElementById("txt").innerHTML= userid
+        }
+    else{
+        document.getElementById("txt").innerHTML="userid invalid"
+    }
+
+
+    </script>
+</body>
+</html>

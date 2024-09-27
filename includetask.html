@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="txt"></h2>
+    <script>
+        let z=prompt("enter the words")
+         let x="java script is dynamic and interactive"
+        let y=x.includes(z)
+       
+        if(y==true){
+            document.getElementById('txt').innerHTML="available"
+        }else{
+            document.getElementById('txt').innerHTML="not available"
+        }
+    </script>
+</body>
+</html>

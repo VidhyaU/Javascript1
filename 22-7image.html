@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+   
+    <select id="ten" onchange="Demo()">
+        <option>20%</option>
+        <option>40%</option>
+        <option>60%</option>
+        <option>80%</option>
+ 
+    </select>
+    <br>
+    <img src="a1.jpg" id="imt">
+    <script>
+        function Demo(){
+        // document.getElementById("image").style.width="500px".height="500px"
+        // document.getElementById("image").style.marginLeft="500px"
+        // document.getElementById("image").style.marginTop="200px"
+        // document.getElementById("bd").style.backgroundColor="green"
+        let data = document.getElementById("ten").value
+        document.getElementById("imt").style.marginLeft=data
+        }
+    </script>
+</body>
+ 
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+</head>
+<body>
+    <textarea id="myTextarea" rows="10" cols="80"></textarea>
+    <br>
+    <button onclick="mySave()">Save</button>
+    <button onclick="myLoad()">Load</button>
+    <button onclick="myClear()">Clear</button>
+    <script>
+        function mySave(){
+        var  myContent = document.getElementById("myTextarea").value;
+       localStorage.setItem("myContent",myContent);
+        }
+        function myLoad(){
+        var  myContent = localStorage.getItem("myContent");
+        document.getElementById("myTextarea").value=myContent;
+        }
+        function myClear(){
+            localStorage.clear()
+        }
+    </script>
+</body>
+</html>

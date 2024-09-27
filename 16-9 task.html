@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate OTP</title>
+    <script>
+        function generateOTP() {
+            
+            const otp = Math.floor(100000 + Math.random() * 900000);
+            return otp;
+        }
+
+        function displayOTP() {
+            const otp = generateOTP();
+            document.getElementById('otpDisplay').textContent = `Your OTP is: ${otp}`;
+        }
+
+        
+        window.onload = function() {
+            displayOTP();
+        };
+    </script>
+</head>
+<body>
+    <h1>Six-Digit 16-9OTP Generator</h1>
+    <p id="otpDisplay">Generating OTP...</p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByID</title>
+    <style>
+        #box{
+            width:400px;
+            height:300px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+        <table border="1px solid black" width="1000px" >
+            <tr>
+                <td>Name</td>
+                <td>Place</td>
+                <td>Age</td>
+            </tr>
+
+            <tr>
+                <td id="txt"></td>
+                <td id="boxes"></td>
+                <td id="boox"></td>
+            </tr>
+            <script>
+            
+                 let a=prompt("Enter your Name")
+                 let b=prompt("Enter your Place")
+                 let c=prompt("Enter your Age")
+                 document.getElementById("txt").innerHTML=a
+                 document.getElementById("boxes").innerHTML=b
+                 document.getElementById("boox").innerHTML=c
+            </script>
+        </table>
+    
+</body>
+</html>
+
+
+
+
+
+
+<!--<h1 id="txt">JavaScript</h1>
+        <h1 id="box"></h1>
+
+        <script>
+            //var uid="Mouritech,Madhapur"
+           // document.getElementById('txt').innerHTML="HELLO"
+
+          // document.getElementById("box").innerHTML="Mouritech"
+
+          //document.getElementById('box').innerHTML=uid
+    </script>-->

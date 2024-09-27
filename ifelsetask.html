@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ifelse</h1>
+    <table border="1px solid black" width="300px">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Eligibility</td>
+        </tr>
+
+        <tr>
+            <td id="name"></td>
+            <td id="age"></td>
+            <td id="eligibility"></td>
+        </tr>
+    </table>
+    <script>
+        let name=prompt("Enter Name")
+        let age=prompt("Enter age")
+        
+        //let eligiblity=prompt("Enter eligiblity")
+        
+        document.getElementById("name").innerHTML=name
+        document.getElementById("age").innerHTML=age
+       
+        //document.getElementById("eligibility").innerHTML=eligibility
+
+        if(age<=18)
+        {
+            //alert("Not Eligible")
+           document.getElementById("eligibility").innerHTML="Not Eligible"
+        }
+        else{
+            //alert("Eligible")
+           document.getElementById("eligibility").innerHTML="Eligible"
+        }
+
+        
+       
+
+    </script>
+</body>
+</html>

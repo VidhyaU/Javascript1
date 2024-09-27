@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Check</title>
+    <script>
+        function validateLogin() {
+            // Define the correct user ID and password
+            const correctUserId = 'user123';
+            const correctPassword = 'pass123';
+
+            // Get user input values
+            const userId = document.getElementById('userid').value;
+            const password = document.getElementById('password').value;
+
+            // Check if the input values match the correct values
+            if (userId === correctUserId && password === correctPassword) {
+                alert('Login successful!');
+            } else {
+                alert('User ID or password is not matching.');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+    <h2>Login Form</h2>
+    <form onsubmit="validateLogin(); return false;">
+        <label for="userid">User ID:</label>
+        <input type="text" id="userid" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+    </div>
+</body>
+</html>

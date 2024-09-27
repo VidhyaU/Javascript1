@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="in" onkeydown="Demo()" onkeyup="Demo1()">
+    <span id="out"></span>
+    <script>
+        const Demo=()=>{
+            document.getElementById('out').innerHTML="Key Pressed"
+        }
+
+        const Demo1=()=>{
+            document.getElementById('out').innerHTML="Key Released"
+        }
+    </script>
+</body>
+</html>

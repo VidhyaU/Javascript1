@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="txt"></h3>
+    <select onchange="Demo()" id="course">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Javascript</option>
+        <option>React</option>
+        <option>Java</option>
+    </select>
+
+    <script>
+        function Demo(){
+            let data=document.getElementById('course').value
+            document.getElementById('txt').innerHTML="You Selected "+data+" Course "
+        
+        }
+    </script>
+</body>
+</html>

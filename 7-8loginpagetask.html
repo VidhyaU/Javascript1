@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        .one {
+            height: 250px;
+            width: 400px;
+            margin: auto;
+            padding: 5%;
+            padding-bottom: 2%;
+            text-align: center;
+            border: 1px solid black;
+            color: rgb(245, 242, 242);
+            background-color: rgba(205, 247, 252, 0.5);
+            font-family: Arial, sans-serif;
+            border-radius: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /*display:flex;
+            float: left;*/
+            line-height: 1.5rem;
+            transition:all 2s;
+            
+        }
+        .container{
+            display:flex;
+            float: left;
+        }
+
+        .button {
+            background-color: rgb(255, 255, 255);
+            color: rgb(13, 13, 13);
+            width: 150px;
+            padding: 6px;
+            border-radius: 10px;
+            border: 1px solid black;
+            font-size: medium;
+        }
+
+        .button:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        .color {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+           
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .two {
+            display: flex;
+            float: right;
+        }
+
+       
+    </style>
+</head>
+
+<body class="color" style="background-image: url(css.webp) ;">
+    <div class="container">
+        
+        <div class="one">
+            <h2>Login Form</h2>
+            <form onsubmit="validateLogin(); return false;" >
+                <label for="userid">User ID </label>
+                <input type="text" id="userid" placeholder="User ID" required><br><br>
+                <label for="password">Password </label>
+                <input type="password" id="password" placeholder="Password" required><br><br>
+                <input type="submit" value="Login" class="button">
+            </form>
+        </div>
+        
+        <div class="two">
+            <img src="travelling.webp" style="width:450px; height:310px; border-radius: 10px;">
+           
+        </div>
+
+    </div>
+
+    <script>
+        function validateLogin() {
+1
+            const userId = document.getElementById('userid').value;
+            const password = document.getElementById('password').value;
+
+            const correctUserId = 'Dhari';
+            const correctPassword = 'meera@123';
+
+            if (userId === correctUserId && password === correctPassword) {
+                window.location.href = "7-8nextpage.html"
+            } else {
+                alert('User ID or password is not matching.');
+            }
+        }
+    </script>
+</body>
+
+</html>

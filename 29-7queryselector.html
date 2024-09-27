@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>querySelector</h1>
+   
+   <!--tag-->
+   <p>first para</p> 
+   <p>second para</p> 
+   <p>third para</p>
+
+   
+   <h2 class="txt">hello</h2>
+   <h2 class="txt">hello</h2>
+   <h2 class="txt">hello</h2>
+
+   <h2 id="txt1">World</h2>
+
+   <button onclick="demo()">green color</button>
+
+   <script>
+    const  demo=()=>{
+    document.querySelector('p').style.color='red'
+    document.querySelector('.txt').style.color='pink'
+    document.querySelector('#txt1').style.color='green'
+    
+    
+    }
+   </script> 
+</body>
+</html>

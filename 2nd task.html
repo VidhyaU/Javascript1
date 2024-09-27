@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Selector</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+        .fruit {
+            width: 100px; 
+            cursor: pointer;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fruitContainer">
+        <img class="fruit" data-fruit="banana" src="banana.jpg" alt="Banana">
+        <img class="fruit" data-fruit="pineapple" src="pineapple.jpg" alt="Pineapple">
+        <img class="fruit" data-fruit="apple" src="apple.jpg" alt="Apple">
+    </div>
+    <img id="selectedImage" src="" alt=""" style="display:none; margin-top:20px;">
+
+    <script>
+        const fruitColors = {
+            banana: 'yellow',
+            pineapple: 'gold',
+            apple: 'lightgreen'
+        };
+
+        document.querySelectorAll('.fruit').forEach(img => {
+            img.addEventListener('click', function() {
+                const selectedFruit = this.getAttribute('data-fruit');
+                const selectedImg = document.getElementById('selectedImage');
+                
+                
+                selectedImg.src = this.src;
+                
+                
+
+                
+                document.body.style.backgroundColor = fruitColors[selectedFruit];
+            });
+        });
+    </script>
+</body>
+
+</html>

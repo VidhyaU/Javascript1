@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txt"></h1>
+    
+        <script>
+            let date=new Date();
+            let day=date.getDay();
+       if(day==0){
+        document.getElementById("txt").innerHTML='Sunday'
+       }
+       else  if(day==1){
+        document.getElementById("txt").innerHTML='Monday'
+       }
+       else  if(day==2){
+        document.getElementById("txt").innerHTML='Tuesday'
+       }
+       else  if(day==3){
+        document.getElementById("txt").innerHTML='wendsday'
+       }
+       else  if(day==4){
+        document.getElementById("txt").innerHTML='thursday'
+       }
+       else  if(day==5){
+        document.getElementById("txt").innerHTML='friday'
+       }
+       else  if(day==6){
+        document.getElementById("txt").innerHTML='saturday'
+       }
+      /* else{
+        document.getElementById("txt").innerHTML="today is"+day
+       }*/
+
+        </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3 id="txt"></h3>
+    <select onchange="Demo()" id="city">
+        <option >Hyderabad</option>
+        <option >Chennai</option>
+        <option >Delhi</option>
+        
+    </select>
+    
+    
+    <script>
+         function Demo(){
+            let data=document.getElementById('city').value
+            
+            //document.getElementById('txt').innerHTML="Places in the city are <span>"+hyd+"</span>"
+            //document.getElementById('txt').innerHTML="Places in the city are <span>"+che+"</span>"
+            //document.getElementById('txt').innerHTML="Places in the city are <span>"+del+"</span>"
+           // document.getElementById('txt').innerHTML="You Selected "+"<span style='color:yellow'> "+data+"</span>"+ " City"
+           
+           if(data=="Hyderabad"){
+            let places=["Golkonda","TankBund","Charminar"]
+            document.getElementById('txt').innerHTML="Places in the city are <span>"+places+"</span>"
+            
+           }
+           else if( data=="Chennai"){
+            let places=["Arunachalam temple","Aadi Yogi"]
+            document.getElementById('txt').innerHTML="Places in the city are <span>"+places+"</span>"
+           }
+
+           else if( data=="Delhi"){
+            let places=["RedFort","Taj"]
+            document.getElementById('txt').innerHTML="Places in the city are <span>"+places+"</span>"
+           }
+        }
+    </script>
+</body>
+</html>

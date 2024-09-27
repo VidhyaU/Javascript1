@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bg">
+    <h3 id="txt"></h3>
+    <script>
+       
+   
+    const demo=()=> {
+ 
+    let x = document.getElementById('bg')
+ 
+    if(x.style.background== "") {
+     document.getElementById('bg').style.background='yellow'
+    }
+    else if(document.getElementById('bg').style.background=='yellow'){
+      document.getElementById('bg').style.background= 'red'
+    }
+    else if(document.getElementById('bg').style.background=='red'){
+      document.getElementById('bg').style.background= 'yellow'
+  }
+    }
+  setInterval('demo()', 2000)
+ 
+
+
+ 
+</script>
+</body>
+</html>

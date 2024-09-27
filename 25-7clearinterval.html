@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="Stop()">Stop the Time</button>
+    <script>
+        function demo(){
+            const obj=new Date();
+            let time=obj.toLocaleTimeString();
+            document.getElementById('demo').innerHTML=time
+        }
+        const x=setInterval(demo,1000)
+            function Stop(){
+                clearInterval(x);
+            
+        }
+    </script>
+</body>
+</html>

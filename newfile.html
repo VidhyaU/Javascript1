@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="info">
+    <h2 onclick="Demo()" id="txt">Red</h2>
+    <h2 onclick="Demo1()" id="txt">Yellow</h2>
+    <script>
+
+        const Demo=()=>{
+            document.getElementById('info').style.background="red"
+        }
+        const Demo1=()=>{
+            document.getElementById('info').style.background="yellow"
+        }
+        setInterval('Demo()','Demo1()',1000)
+    
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="txt">
+    <h4>JS</h4>
+    <script>
+        
+        const Demo=()=>{
+            document.getElementById('txt').style.background="yellow"
+           }
+        document.getElementById('txt').style.background="red"
+           
+        setInterval('Demo()',2000)
+
+
+    </script>
+</body>
+</html>-->

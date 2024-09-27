@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mobile Screen Mockup</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1f191a, #cc8119);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+ 
+        .container {
+            display: flex;
+            align-items: center;
+        }
+ 
+        .mobile-screen {
+            width: 320px;
+            height: 600px;
+            border: 8px solid #28a745;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            background-color: white;
+            margin-right: 20px; /* Space between screen and card */
+        }
+ 
+        .screen-bg {
+            width: 100%;
+            height: 100%;
+            background-color: #28a745;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+ 
+        .app-icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+ 
+        .app-icon {
+            font-size: 40px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid #28a745;
+            border-radius: 10px;
+            padding: 15px;
+            transition: transform 0.2s, background-color 0.2s;
+            cursor: pointer;
+        }
+ 
+        .app-icon:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 1);
+        }
+ 
+        .display-card {
+            width: 250px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+ 
+        .display-card .icon {
+            font-size: 50px;
+        }
+ 
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+ 
+        .card-subtitle {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mobile-screen">
+            <div class="screen-bg">
+                <div class="app-icons">
+                    <div class="app-icon" onclick="iconTap(this, '📱', 'Phone App', 'Make calls and send messages.', 'The Phone app allows you to stay connected with your friends and family.');">📱</div>
+                    <div class="app-icon" onclick="iconTap(this, '📷', 'Camera App', 'Capture moments.', 'Use the Camera app to take photos and videos.');">📷</div>
+                    <div class="app-icon" onclick="iconTap(this, '📅', 'Calendar App', 'Manage your schedule.', 'Stay organized with your Calendar app.');">📅</div>
+                    <div class="app-icon" onclick="iconTap(this, '🎵', 'Music App', 'Enjoy your favorite tunes.', 'Listen to your favorite music anytime, anywhere.');">🎵</div>
+                    <div class="app-icon" onclick="iconTap(this, '🌐', 'Browser App', 'Browse the internet.', 'Access your favorite websites and more.');">🌐</div>
+                    <div class="app-icon" onclick="iconTap(this, '⚙️', 'Settings App', 'Adjust your preferences.', 'Configure your device settings easily.');">⚙️</div>
+                    <div class="app-icon" onclick="iconTap(this, '💬', 'Messaging App', 'Chat with friends.', 'Send and receive messages instantly.');">💬</div>
+                    <div class="app-icon" onclick="iconTap(this, '🗺️', 'Maps App', 'Navigate the world.', 'Find your way with the Maps app.');">🗺️</div>
+                    <div class="app-icon" onclick="iconTap(this, '🎮', 'Game App', 'Play fun games.', 'Enjoy various games on your device.');">🎮</div>
+                    <div class="app-icon" onclick="iconTap(this, '📰', 'News App', 'Stay informed.', 'Get the latest news updates.');">📰</div>
+                    <div class="app-icon" onclick="iconTap(this, '📊', 'Stats App', 'Track your data.', 'Analyze statistics and insights.');">📊</div>
+                    <div class="app-icon" onclick="iconTap(this, '🏠', 'Home App', 'Return to the home screen.', 'Access all your apps from the Home app.');">🏠</div>
+                </div>
+            </div>
+        </div>
+        <div id="displayArea" class="display-card"></div>
+    </div>
+ 
+    <script>
+        function iconTap(element, icon, appName, subtitle, description) {
+            element.style.transition = 'transform 0.3s';
+            element.style.transform = 'translateX(20px)';
+ 
+            setTimeout(() => {
+                element.style.transform = 'translateX(0)';
+                document.getElementById('displayArea').innerHTML = `
+                    <div class="icon">${icon}</div>
+                    <h5 class="card-title">${appName}</h5>
+                    <h6 class="card-subtitle">${subtitle}</h6>
+                    <p>${description}</p>
+                `;
+            }, 300);
+        }
+    </script>
+</body>
+</html>
+ 

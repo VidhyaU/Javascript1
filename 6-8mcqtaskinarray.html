@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- <script>
+      
+        var questions = [
+            {
+                prompt:"What color are Apples?\n(a)Red \n(b)Purple \n (c)Orange",
+                answer:"a"
+            },
+            {
+                prompt:"What color are Banana?\n(a)Tela \n(b)Magenta \n (c)Yellow",
+                answer:"c"
+            },
+            {
+                prompt:"What color are Strawberries?\n(a)Yellow \n(b)Red \n (c)Orange",
+                answer:"b"
+            }
+            
+        ];
+
+        var score = 0;
+        alert(questions.length)
+        for(var i = 0 ; i < quetions.length; i++){
+            var response = prompt(questions[i].prompt);
+            if(response == questions[i].answer){
+                score++;
+                alert("CORRECT!");
+            } else {
+                alert("WRONG!")
+            }
+            
+        }
+alert("You Got "+ score + "/" + questions.length)
+    </script>  -->
+
+
+   <script>
+ 
+        const questions = [
+            {
+                prompt: " what is the color of apple?\n (a)red/green\n\ (b)purple\n(c)yellow",
+                answer: "a"
+            },
+            {
+                prompt: " what is the color of banana?\n(a)teal\n(b)magenta\n(c)yellow",
+                answer: "c"
+            },
+            {
+                prompt: " what is the color of straberry?\n (a)yellow\n(b)pink\n(c)red",
+                answer: "b"
+            }
+        ];
+        let score = 0;
+        alert(questions.length)
+        for (let i = 0; i < questions.length; i++) {
+            let response = prompt(questions[i].prompt);
+            if (response == questions[i].answer) {
+                score++;
+                alert("Correct!");
+            } else {
+                alert("Wrong!");
+            }
+        }
+        alert("you got  " + score + " / " + questions.length);
+ 
+    </script>  
+</body>
+</html>

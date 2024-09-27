@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="ucase" id="ucase">
+        <br>
+
+        <input type="button" value="convert" onclick="Demo()">
+    </form>
+    
+    <script>
+        function Demo() {
+            let val = document.getElementById('ucase').value
+
+            if (val == val.toUpperCase(val)) {
+                document.getElementById('ucase').value = val.toLowerCase()
+            }
+
+
+            if (val == val.toLowerCase(val)) {
+                document.getElementById('ucase').value = val.toUpperCase()
+            }
+        }
+    </script>
+
+</body>
+
+</html>

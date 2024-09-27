@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="mainform" name="mainform">
+        Java <input type="radio" name="course" value="Java" onclick="Demo()">
+        JavaScript <input type="radio" name="course" value="JavaScript" onclick="Demo()">
+        React <input type="radio" name="course" value="React" onclick="Demo()">
+        SQL <input type="radio" name="course" value="SQL" onclick="Demo()">
+    </form>
+    <span id="result"></span>
+    <script>
+        function Demo(){
+            var val=document.getElementById('mainform').course.value;
+            document.getElementById("result").innerHTML='you selected: ' + val;
+        }
+    </script>
+</body>
+</html>

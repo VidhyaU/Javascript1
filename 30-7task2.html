@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    p{
+        padding: 20px;
+        margin:30px;
+        }
+
+     p:nth-child(odd){
+background: lightgreen;
+        }
+
+        p:nth-child(even){
+background: violet;
+        }
+</style>
+<body>
+    <h1>createElement</h1>
+    <div id="box"></div>
+    <input type="text" id="txt">
+    <br>
+    <button onclick="Demo()">Add</button>
+    <script>
+        function Demo(){
+
+            let x=document.createElement('p')        
+            let text=document.createTextNode(document.getElementById('txt').value)
+            x.appendChild(text)
+            document.body.appendChild(x);
+           //document.getElementById('txt').style.background='yellow'
+           
+            //x.appendChild(txt)
+            //console.log(x)
+            
+        
+        }
+
+
+
+        //let x=document.createElement(prompt('enter a tag'))
+        //let text=document.createTextNode(prompt('enter a content'))
+        //x.appendChild(text)
+        //console.log(x)
+        //document.body.appendChild(x);
+        //document.getElementById('box').appendChild(x)
+    </script>
+</body>
+</html>

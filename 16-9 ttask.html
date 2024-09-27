@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/cjs/react-dom.production.min.js" integrity="sha512-LPPILHrTRSQMKVFEnVwdNS88ZMWRNpOsmn4gx1sH7agJk3O0sTJ8MIGtm9JdlCabY4PXlUrxkmO7sGAshnLUFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/cjs/react.production.min.js" integrity="sha512-CoEUZtIbESeHIn7pFhNGz7XIggHeWwjBhsqg4ODgdH81M54q44DF0vjvEQLA5J3Q02XbO1hZq+iDEy9x1z3bDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    .card-body {
+      border-radius: 5px;
+    }
+
+    /* .container {
+      display: flex;
+      justify-content: center;
+
+      align-items: center;
+      flex-wrap: wrap;
+
+    } */
+
+    .card {
+      margin: 5px;
+       }
+       swap{
+        font-size: small;
+        margin: left 30px;
+       }
+  
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      
+        <div class="card" style="width: 16rem;">
+
+          <div class="card-body" style="background-color: brown; background-size: cover;">
+            <h6 class="card-title1">New Orders</h6>
+            <h5 class="card-title">3,243  <swap>12.5%</swap><i class="fa-solid fa-arrow-up"></i></h5>
+            <meter value="" max="100" id="met"> </meter>
+            <script>
+              document.getElementById('met').value = '30'
+            </script>
+          </div>
+        </div>
+
+        <div class="card" style="width: 16rem;">
+
+          <div class="card-body" style="background-color:blue;">
+            <h6 class="card-title1">Customers</h6>
+            <h5 class="card-title">5000</h5>
+            <meter value="" max="100" id="met1"> </meter>
+            <script>
+              document.getElementById('met1').value = '50'
+            </script>
+          </div>
+        </div>
+
+        
+        <div class="card" style="width: 16rem;">
+          <div class="card-body" style="background-color: green;">
+            <h6 class="card-title1">Ticckets Resolved/h6>
+              <h5 class="card-title">5500</h5>
+              <meter value="" max="100" id="met2"> </meter>
+              <script>
+                document.getElementById('met2').value = '70'
+              </script>
+          </div>
+        </div>
+
+        <div class="card" style="width: 16rem;">
+
+          <div class="card-body" style="background-color: orangered;">
+            <h6 class="card-title1">Revenue Today</h6>
+            <h5 class="card-title">7000</h5>
+            <meter value="" max="100" id="met3"> </meter>
+            <script>
+              document.getElementById('met3').value = '80'
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

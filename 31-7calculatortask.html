@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d{
+            align-items: center;
+            width:40px;
+            height:40px;
+            color:rgb(12, 12, 12);
+            background-color: #d7fbfc;
+          box-shadow: 4px 4px 4px black;
+           transition: all 1s;
+           border:1px solid black; 
+           padding:10px;
+        }
+        .d:hover{
+            background-color:rgb(36, 35, 35);
+            color:rgb(244, 237, 237);
+            border:1px solid black;
+        }
+
+        .container{
+            border-radius: 10px;
+            border:1px solid black;
+            text-align: center;
+            width:250px;
+            height:340px;
+            padding:20px 20px 10px 20px;
+            font-size: 2.5em;
+            font-family: Arial, Helvetica, sans-serif;
+           /* background-image:url(ocean.jpg);*/
+           background-image: linear-gradient( white,#acf6f7); 
+            margin:auto;
+            line-height: 3rem;
+            font-size: xx-large;
+            position: relative;
+            
+           /* box-shadow: 0 5px 10px rgba(0,0, 0, 0.05); */
+        }
+        
+        .dh{
+            height:35px;
+           width:140px;
+           background-color: whitesmoke;
+           color:black;
+           box-shadow: 4px 4px 4px black;
+           border:1px solid black;
+           background-color:#d7fbfc ;
+        }
+        .dh:hover{
+            background-color: whitesmoke;
+            color:black;
+            border-radius: 7px;
+            border:1px solid black;
+        }
+        #screen{
+            box-shadow: 2px 2px 2px black;
+            height:50px;
+            border:1px solid black;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+   <form>
+    <input type="text" id="screen" style="width:200px; ">
+    <br>
+    <input type="button" class="d" value="1" onclick="demo(1)">
+    <input type="button" class="d" value="2" onclick="demo(2)">
+    <input type="button" class="d" value="3" onclick="demo(3)">
+    <input type="button" class="d" value="*" onclick="demo('*')">
+    <br>
+    <input type="button" class="d" value="4" onclick="demo(4)">
+    <input type="button" class="d" value="5" onclick="demo(5)">
+    <input type="button" class="d" value="6" onclick="demo(6)">
+    <input type="button" class="d" value="-" onclick="demo('-')">
+    <br>
+    <input type="button" class="d" value="7" onclick="demo(7)">
+    <input type="button" class="d" value="8" onclick="demo(8)">
+    <input type="button" class="d" value="9" onclick="demo(9)">
+    <input type="button" class="d" value="+" onclick="demo('+')">
+    <br>
+   <input type="button" class="d" value="/" onclick="demo('/')">
+   <input type="button" class="d" value="0" onclick="demo(0)">
+   <input type="button" class="d" value="%" onclick="demo('%')">
+    <input type="button" class="d" value="=" onclick="demo1('=')"><br>
+    <input type="reset" class="dh" value="Clear"> 
+    <input type="button" class="d" value="DEL" onclick="demo2('DEL')"> 
+    
+
+    
+    
+</div>
+   </form> 
+
+   <script>
+    function demo(num){
+        document.getElementById('screen').value +=num
+    }
+    function demo1(){
+        document.getElementById('screen').value=eval(document.getElementById('screen').value)
+    }
+
+    function demo2(){
+                var display = document.getElementById("screen");
+                display.value = display.value.slice(0, -1);
+    }
+   </script>
+</body>
+</html>

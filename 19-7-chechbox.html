@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS</h2>
+    <input type="checkbox" value="hindi" id="chk_hin">Hindi
+    <br>
+    <input type="checkbox" value="english" id="chk_eng">English
+    <br>
+    <button onclick="test()">Click</button>
+    <h3 id="output"> </h3>
+    <script>
+        function test(){
+            var hin=document.getElementById('chk_hin')
+            var eng=document.getElementById('chk_eng')
+            if (hin.checked && eng.checked){
+                document.getElementById('output').innerHTML=hin.value+" "+eng.value
+            }
+            
+            else if(hin.checked){
+                document.getElementById('output').innerHTML=hin.value
+            }
+            else if(eng.checked){
+                document.getElementById('output').innerHTML=eng.value
+            }
+            else{
+                document.getElementById('output').innerHTML="invalid entry"
+            }
+            
+        }
+    </script>
+</body>
+</html>

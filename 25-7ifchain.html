@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="txt">
+    <h3>Terinary Operator</h3>
+    <p id="demo"></p>
+    <script>
+        
+            let marks=prompt("Enter your marks");
+            document.write(marks)
+            let result=(marks<40)? "Unsatisfactory":
+                (marks<60) ? "Average":
+                (marks < 80)? "Good": "Excellent";
+                
+                document.getElementById('demo').innerHTML=result
+                document.getElementById('txt').style.background="yellow"
+        
+    </script>
+</body>
+</html>

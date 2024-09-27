@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Selector</title>
+</head>
+
+<body>
+    <select id="fruits">
+        <option value="">Select a fruit</option>
+        <option value="banana">Banana</option>
+        <option value="pineapple">Pineapple</option>
+        <option value="orange">Orange</option>
+        <option value="mango">Mango</option>
+        <option value="apple">Apple</option>
+    </select>
+    <img id="fruitImage" src="" alt="" style="display:none;">
+
+    <script>
+        const fruitImages = {
+            banana: 'banana.jpg',
+            pineapple: 'pineapple.jpg',
+            orange: 'orange.jpg',
+            mango: 'mango.jpg',
+            apple: 'apple.jpg'
+        };
+
+        document.getElementById('fruits').addEventListener('change', function() {
+            const selectedFruit = this.value;
+            const img = document.getElementById('fruitImage');
+
+            if (selectedFruit) {
+                img.src = fruitImages[selectedFruit];
+                img.alt = selectedFruit.charAt(0).toUpperCase() + selectedFruit.slice(1);
+                img.style.display = 'block'; 
+            } else {
+                img.src = '';
+                img.alt = '';
+                img.style.display = 'none'; 
+            }
+        });
+    </script>
+</body>
+
+</html>

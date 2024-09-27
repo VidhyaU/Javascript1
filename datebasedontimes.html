@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    
+
+    <h1 id="b"></h1>
+    <script>
+    let obj=new Date()
+    let a=obj.getHours()
+              
+              
+              if (a<12){
+                document.getElementById("b").innerHTML="Good Morning"
+              }
+              else if (a>12 && a<=17){
+                document.getElementById("b").innerHTML="Good Afternoon"
+              }
+              else if(a>17){
+                document.getElementById("b").innerHTML="Good Evening"
+              }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>getElementsByClassName</h1>
+   <p class="txt">first para</p> 
+   <p class="txt">second para</p> 
+   <p class="txt">third para</p>
+   <button onclick="demo()">green color</button>
+   <script>
+    const  demo=()=>{
+    let data=document.getElementsByClassName('txt')
+    
+    data[1].innerHTML="JavaScript"
+    data[1].style.color="green"
+    }
+   </script> 
+</body>
+</html>

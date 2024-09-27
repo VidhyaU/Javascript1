@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Date</title>
+</head>
+
+<body>
+    <h1>JS</h1>
+    <table border="1px solid black">
+
+            <tr>
+            <td>date</td>
+            <td>tempature</td>
+            <td>weather condition</td>
+            </tr>
+            <tr>
+                <td id="date"></td>
+                <td id="temp"></td>
+                <td id="weather"></td>
+            </tr>
+    </table>
+    <script>
+        let marks=prompt("enter the tempature")
+           let obj=new Date()
+              let a=obj.getDay()
+              let b=obj.getMonth()+1
+              let c=obj.getFullYear()
+              document.getElementById("date").innerHTML=a+" "+b+" "+c
+              document.getElementById("temp").innerHTML=marks
+ 
+             
+              if(marks<=20){
+             document.getElementById('weather').innerHTML='weather is cool'
+        }else if(marks>20 && marks<=40 ){
+            document.getElementById('weather').innerHTML='weather is hot'
+        } else if (marks>40){
+            document.getElementById('weather').innerHTML='weather is external hot'
+        }
+         
+
+
+
+    </script>
+</body>
+
+</html>

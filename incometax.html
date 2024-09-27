@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS</h1>
+    
+        <table border="1px solid black">
+        <tr>
+            <td>Salary</td>
+            <td>Tax Amount</td>
+            <td>Take Home Salary</td>
+        </tr>
+        <tr>
+            <td id="sal"></td>
+            <td id="tax"></td>
+            <td id="take"></td>
+        </tr>
+    
+    
+    <script>
+        let salary=prompt("Enter Your Salary")
+        
+        
+            document.getElementById('sal').innerHTML=salary
+            
+            if(salary<=30000){
+            document.getElementById("tax").innerHTML="no tax"
+            document.getElementById("take").innerHTML=salary
+            }
+            else if(salary>30000 && salary<=40000){
+            document.getElementById("tax").innerHTML=salary*5/100
+            document.getElementById("take").innerHTML=take
+            document.getElementById("take").innerHTML=salary-salary * 5/100
+        }
+        else if (salary>40000 && salary<=50000){
+            document.getElementById("tax").innerHTML=salary*8/100
+             document.getElementById("take").innerHTML=take
+            document.getElementById("take").innerHTML=salary-salary * 8/100
+ 
+        }
+        else if (salary>50000){
+            document.getElementById("tax").innerHTML=salary*10/100
+            document.getElementById("take").innerHTML=take
+            document.getElementById("take").innerHTML=salary-salary * 10/100
+        }
+
+    </script>
+    </table>
+</body>
+</html>
